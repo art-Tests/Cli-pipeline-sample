@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{63957D98-7E26-4FD8-828F-5E3D33CFFD61}</ProjectGuid>
+    <ProjectGuid>{2F3774D8-C32A-457D-93CD-D0B4E3200F71}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CliThreads</RootNamespace>
-    <AssemblyName>CliThreads</AssemblyName>
+    <RootNamespace>Pipeline_P2</RootNamespace>
+    <AssemblyName>Pipeline-P2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,10 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cli.Model\Cli.Model.csproj">
-      <Project>{9e2f611d-fcd1-4945-8406-340a640bfbf4}</Project>
+      <Project>{9E2F611D-FCD1-4945-8406-340A640BFBF4}</Project>
       <Name>Cli.Model</Name>
     </ProjectReference>
   </ItemGroup>
